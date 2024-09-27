@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0%;
+        }
+
+        nav {
+            position: fixed;
+            height: 12vh;
+            width: 100%;
+            /*border: 1px solid greenyellow;*/
+            display: flex;
+            background-color: white;
+
+
+
+        }
+
+        .center ul {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 50px;
+            height: 12vh;
+            /*padding-left: 400px;*/
+            padding-left: 100px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        a:active {
+            background-color: #deb887;
+        }
+
+        a:visited {
+            background-color: #deb887;
+        }
+
+        ul li a:hover {
+            background-color: #deb887;
+            border-radius: 5px;
+
+        }
+
+        .center {
+            width: 70%;
+            /*border: 1px solid rgb(16, 13, 13);*/
+            height: 12vh;
+        }
+
+        .left img {
+            display: flex;
+            height: 50px;
+            width: 170px;
+            /*padding-left: 10px;
+            padding-top: 15px;*/
+            margin: 10px;
+        }
+
+        .left {
+            width: 30%;
+            display: flex;
+        }
+
+        .second {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(Bg_2.jpg);
+            background-size: 100% 100%;
+            /* z-index: 1000;*/
+            /* opacity: 0.8;*/
+        }
+
+        .second h1 {
+
+            color: white;
+            font-size: 50px;
+        }
+
+        .mhead {
+            height: 200px;
+            width: 50%;
+            text-align: center;
+            /*z-index: 1001;*/
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .info {
+            color: white;
+            line-height: 30px;
+            margin: 20px;
+            font-size: 20px;
+            font-size: 1.1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .mhead>h1 {
+            font-weight: bolder;
+        }
+
+
+        /* .second::before{
+        content: ;
+        width: 100vw;
+        height: 100vh;
+       z-index: 1001;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-color: rgba(0,0,0,0.8);
+    }*/
+        .reserve a {
+            text-align: center;
+            text-decoration: none;
+            padding: 15px 16px;
+            border: 3px solid#deb887;
+            color: white;
+            padding: 15px 56px 15px 56px;
+            font-size: 17px;
+            border-radius: 6px;
+        }
+
+        .reserve {
+            margin: 70px;
+        }
+
+        .reserve a:hover {
+            background-color: burlywood;
+        }
+
+        .third {
+            display: flex;
+            padding: 50px;
+
+        }
+
+        .third div {
+            text-align: center;
+        }
+
+        #img {
+            box-shadow: -10px -10px burlywood;
+            height: 350px;
+            width: 500px;
+
+        }
+
+        .para2 {
+            padding-left: 70px;
+            padding-bottom: 50px;
+            line-height: 30px;
+            padding-top: 70px;
+
+        }
+
+        #p2 {
+            padding-bottom: 50px;
+            padding-top: 10px;
+        }
+
+        .para2 h2 {
+            padding-bottom: 10px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .secbutton a {
+            border: 3px solid#deb887;
+            text-decoration: none;
+            padding: 15px 56px 15px 56px;
+            color: black;
+            border-radius: 8px;
+        }
+
+        span {
+            color: burlywood;
+        }
+
+        .secbutton a:hover {
+            background-color: burlywood;
+        }
+
+        .bg {
+            background-image: url("khana.jpg");
+            background-size: 100% 100%;
+            width: 100vw;
+            height: 50vh;
+            background-attachment: fixed;
+        }
+
+        .midd {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            width: 100%;*/
+            color: azure;
+
+        }
+
+        .quote {
+            /* display: flex;*/
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100vw;
+            color: aliceblue;
+            font-size: 40px;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h5 {
+            padding-left: 800px;
+            font-size: 15px;
+            padding-top: 20px;
+        }
+
+        .heading {
+            text-align: center;
+            margin: 16px;
+            font-size: 30px;
+        }
+
+        .subheading {
+            text-align: center;
+            margin-bottom: 40px;
+
+        }
+
+        .specialmenu {
+            padding: 55px;
+        }
+
+        .menunav {
+            display: flex;
+            border: 1px solid greenyellow;
+        }
+
+        .na2 {
+            height: 10vh;
+            width: 100%;
+            /* border: 1px solid red;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .na2 ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            /* padding-left: 350px;*/
+            gap: 50px;
+            padding: 13px;
+            border: 1px solid grey;
+            border-radius: 5px;
+
+
+        }
+
+        .menuitems {
+            display: flex;
+            height: 40vh;
+            width: 100vw;
+            /* border: 1px solid blue;*/
+            /*padding-left: 100px;
+            /padding-right:300px;*/
+            justify-content: center;
+            /*align-items: center;*/
+
+
+
+        }
+
+        .itemdrink1 {
+            height: 240px;
+            width: 325px;
+            /*border: 4px solid rgb(25, 45, 202);*/
+            margin-right: 20px;
+
+            background-image: url(Drinks_1.jpg);
+            background-size: cover;
+
+        }
+
+        .price {
+            padding-left: 20px;
+            font-size: 20px;
+        }
+
+
+        .heading1 {
+            padding: 22px 42px 10px 32px;
+        }
+
+        .itempassage {
+            padding-bottom: 20px;
+            margin: 8px 32px 32px 32px;
+        }
+
+        .text {
+            color: azure;
+
+        }
+
+        .box2 {
+
+            /* border: 1px solid red;*/
+            height: 240px;
+            width: 325px;
+            /* border: 4px solid rgb(25, 45, 202);*/
+            /* margin: 20px;*/
+
+            background-image: url(Drinks_2.jpg);
+            background-size: cover;
+        }
+
+        .secondrow {
+            display: flex;
+            height: 40vh;
+            width: 100vw;
+            /* border: 1px solid blue;*/
+            /*padding-left: 100px;
+            /*padding-right:300px;*/
+            justify-content: center;
+            /*align-items: center;*/
+        }
+
+        .box3 {
+
+            height: 240px;
+            width: 325px;
+            /*border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Drinks_3.jpg);
+            background-size: cover;
+            margin-right: 20px;
+        }
+
+        .box4 {
+
+            height: 240px;
+            width: 325px;
+            /* border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Dinner_1.jpg);
+            background-size: cover;
+        }
+
+        .thirdrow {
+            display: flex;
+            height: 40vh;
+            width: 100vw;
+            /* border: 1px solid blue;*/
+            /*padding-left: 100px;
+            /*padding-right:300px;*/
+            justify-content: center;
+            /*align-items: center;*/
+        }
+
+        .box5 {
+
+            height: 240px;
+            width: 325px;
+            /*border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Lunch_2.jpg);
+            background-size: cover;
+            margin-right: 20px;
+        }
+
+        .box6 {
+
+            height: 240px;
+            width: 325px;
+            /* border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Lunch_3.jpg);
+            background-size: cover;
+        }
+
+        /* Fourth ROW */
+
+        .fourthrow {
+            display: flex;
+            height: 40vh;
+            width: 100vw;
+            /* border: 1px solid blue;*/
+            /*padding-left: 100px;
+            /*padding-right:300px;*/
+            justify-content: center;
+            /*align-items: center;*/
+        }
+
+        .box7 {
+
+            height: 240px;
+            width: 325px;
+            /*border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Dinner_1.jpg);
+            background-size: cover;
+            margin-right: 20px;
+        }
+
+        .box8 {
+
+            height: 240px;
+            width: 325px;
+            /* border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Dinner_2.jpg);
+            background-size: cover;
+        }
+
+        /* Fifth -Row */
+        .fifthrow {
+            display: flex;
+            height: 40vh;
+            width: 100vw;
+            /* border: 1px solid blue;*/
+            /*padding-left: 100px;
+            /*padding-right:300px;*/
+            justify-content: center;
+            /*align-items: center;*/
+        }
+
+        .box9 {
+
+            height: 240px;
+            width: 325px;
+            /* border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Dinner_3.jpg);
+            background-size: cover;
+        }
+
+        .gall {
+            text-align: center;
+        }
+
+        .gallery {
+            font-size: 35px;
+            /*font-weight: bold;*/
+            margin: 19px;
+        }
+
+        .gtext {
+            margin-bottom: 50px;
+        }
+
+        .photo1 {
+            height: 40vh;
+            width: 100vw;
+            /* border: 1px solid green;*/
+            display: flex;
+            justify-content: center;
+            margin: 25px;
+            gap: 40px;
+        }
+
+        .p1 {
+
+            height: 240px;
+            width: 325px;
+            /* border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Gallery_1.jpg);
+            background-size: cover;
+            transition: 0.2s linear;
+        }
+
+        .p1:hover {
+            transform: scale(1.1);
+        }
+
+        .p2 {
+            height: 240px;
+            width: 325px;
+            /* border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Gallery_2.jpg);
+            background-size: cover;
+            transition: 0.2s linear;
+        }
+
+        .p2:hover {
+            transform: scale(1.1);
+        }
+
+        .p3 {
+            height: 240px;
+            width: 325px;
+            /* border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Gallery_3.jpg);
+            background-size: cover;
+            transition: 0.2s linear;
+        }
+
+        .p3:hover {
+            transform: scale(1.1);
+        }
+
+        .prow1 {
+            height: 40vh;
+            width: 100vw;
+            /* border: 1px solid green;*/
+            display: flex;
+            justify-content: center;
+            margin: 25px;
+            gap: 40px;
+        }
+
+        .p4 {
+            height: 240px;
+            width: 325px;
+            /* border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Gallery_4.jpg);
+            background-size: cover;
+            transition: 0.2s linear;
+        }
+
+        .p4:hover {
+            transform: scale(1.1);
+        }
+
+        .p5 {
+            height: 240px;
+            width: 325px;
+            /* border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Gallery_5.jpg);
+            background-size: cover;
+            transition: 0.2s linear;
+
+        }
+
+        .p5:hover {
+            transform: scale(1.1);
+        }
+
+        .p6 {
+            height: 240px;
+            width: 325px;
+            /* border: 4px solid rgb(25, 45, 202);*/
+            background-image: url(Gallery_6.jpg);
+            background-size: cover;
+            transition: 0.2s linear;
+        }
+
+        .p6:hover {
+            transform: scale(1.1);
+        }
+
+        .last1 {
+            height: 75vh;
+            width: 100vw;
+            border: 1px solid blueviolet;
+        }
+
+        .midle {
+            padding: 22px 40px 33px 31px;
+            /*padding: 1px solid green;*/
+            text-align: center;
+        }
+
+        .head1 {
+            /*text-align: center;*/
+            margin: 14px;
+            font-size: 20px;
+        }
+
+        .paratext {
+            /*text-align: center;*/
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            /*border: 3px solid gray;*/
+
+        }
+
+        /*  .prof2{
+           border: 1px solid red;
+           border-radius: 100px;
+           height: 30px; 
+           
+        }*/
+        #img1 {
+            height: 150px;
+            width: 150px;
+           /* border: 1px solid rgb(179, 175, 175);*/
+            border-radius: 100px;
+            padding: 4px;
+        }
+
+        .pafter {
+            /*text-align: center;*/
+            color: burlywood;
+            padding-top: 20px;
+        }
+
+        .parafter {
+            /*padding-top: 12px;*/
+            padding: 20px 12px;
+            font-weight: lighter;
+        }
+
+        .paraf {
+            font-size: 13px;
+            line-height: 25px;
+        }
+
+        .infocontact {
+            height: 15vh;
+            width: 100vw;
+            border: 1px solid black;
+            background-color: burlywood;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            gap: 200px;
+
+        }
+
+        .conatact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*border: 2px solid greenyellow;*/
+        }
+
+        .telephone {
+            height: 50px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*border: 1px solid red;*/
+
+        }
+
+
+
+        .conatact2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*border: 2px solid greenyellow;*/
+        }
+
+        .email {
+            height: 50px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red;*/
+
+        }
+
+        .conatact3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid greenyellow;*/
+            width: 300px;
+            height: 50px;
+            box-sizing: border-box;
+        }
+
+        .location {
+            height: 50px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red;*/
+
+        }
+
+        .pphone {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .nnumber {
+            margin: 5px;
+        }
+
+        .mfooter {
+            display: flex;
+            height: 60vh;
+            width: 100vw;
+            padding: 40px;
+            /*  border: 4px solid rgb(223, 73, 23);*/
+            gap: 60px;
+            background-color: rgb(55, 54, 54);
+        }
+
+        .footerrow {
+            height: 300px;
+            width: 300px;
+            /*border: 2px solid rgba(182, 188, 179, 0.755);*/
+
+
+        }
+
+        .box {
+           border-bottom: 2px dotted burlywood;
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+
+
+        }
+
+        .lore {
+            padding-top: 20px;
+            color: white;
+            text-align: justify;
+            line-height: 30px;
+            font-size: 15px;
+        
+        }
+
+        input[type=email] {
+            width: 200px;
+            padding: 20px;
+            /*border: 2px solid red;*/
+            margin-left: 40px;
+            background-color: black;
+            color: rgb(123, 121, 121);
+            font-size: 15px;
+            border-style: none;
+
+
+        }
+
+        .finalfooter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+
+        .sub {
+            height: 55px;
+            margin-top: 30px;
+            margin-left: 30px;
+            width: 200px;
+        }
+
+        .sub1 {
+            height: 50px;
+            /*  border: 2px solid red;*/
+            /* text-align: center;*/
+            font-size: 20px;
+            color: white;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+
+
+
+
+        }
+
+        .sub1:hover {
+            background-color: burlywood;
+        }
+        .icon{
+            display: flex;
+            height: 100px;
+            width: 300px;
+            margin-top: 30px;
+            gap: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <!-- <h2>logo</h2> -->
+            <img src="Logo_1.1.png" alt="" srcset="">
+
+        </div>
+        <div class="center">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="second">
+        <div class="mhead">
+            <h1>Welcome To <br>
+                The Food Place</h1>
+            <div class="info">
+                <p>See how your users experience your website in realtime or <br> view trends to see any changes in
+                    performance over time.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="reserve">
+                <a href="#">RESERVATION</a>
+            </div>
+
+        </div>
+    </div>
+    <main>
+        <div class="third">
+            <img src="Bg_4 - Copy.jpg" alt="" srcset="" id="img">
+            <div class="para2">
+                <h2>Welcome To<span>The Food Place</span></h2>
+                <p>Little Story</p>
+                <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. sequi dictperspiciat molestiae
+                    <br>ametimpedit ratione illo ut repellendus illum, ab accusamus natus expedita distinctio
+                    <br>aliquam
+                    consequatur debitis animi quos. Lorem ipsum dolor sit amet consectetur<br> adipisicing elit.
+                    Iure,corporis. Dolorem voluptas hic illum corrupt. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Cumque, repellat!
+                </p>
+                <div class="secbutton">
+                    <a href="#">RESERVATION</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <div class="bg">
+        <div class="midd">
+            <p class="quote">" If you're not the one cooking, stay out of the way and <br>compliment the chef."
+            </p>
+            <h5>-Michael Strahan</h5>
+        </div>
+
+    </div>
+
+
+
+    <section class="specialmenu">
+        <h2 class="heading">Special Menu</h2>
+        <p class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="na2">
+            <ul class="menulist">
+                <li><a href="#">ALL</a></li>
+                <li><a href="#">DRINKS</a></li>
+                <li><a href="#">LUNCH</a></li>
+                <li><a href="#">DINNER</a></li>
+            </ul>
+        </div>
+
+        <!-- Menu second Row start -->
+    </section>
+    <!-- FirstRow Start -->
+    <div class="menuitems">
+        <div class="itemdrink1">
+            <div class="text">
+                <h2 class="heading1">Special drink-1</h2>
+                <p class="itempassage">
+                    Lorem, ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Corrupti, aliquid
+                </p>
+                <h6 class="price">$7.8</h6>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="text">
+                <h2 class="heading1">Special drink-1</h2>
+                <p class="itempassage">
+                    Lorem, ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Corrupti, aliquid
+                </p>
+                <h6 class="price">$7.8</h6>
+            </div>
+        </div>
+
+    </div>
+    <!-- Second RowStart -->
+    <div class="secondrow">
+        <div class="box3">
+            <div class="text">
+                <h2 class="heading1">Special drink-1</h2>
+                <p class="itempassage">
+                    Lorem, ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Corrupti, aliquid
+                </p>
+                <h6 class="price">$7.8</h6>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="text">
+                <h2 class="heading1">Special drink-1</h2>
+                <p class="itempassage">
+                    Lorem, ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Corrupti, aliquid
+                </p>
+                <h6 class="price">$7.8</h6>
+            </div>
+        </div>
+
+    </div>
+    <!-- thirdrow -->
+    <div class="thirdrow">
+        <div class="box5">
+            <div class="text">
+                <h2 class="heading1">Special drink-1</h2>
+                <p class="itempassage">
+                    Lorem, ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Corrupti, aliquid
+                </p>
+                <h6 class="price">$7.8</h6>
+            </div>
+        </div>
+        <div class="box6">
+            <div class="text">
+                <h2 class="heading1">Special drink-1</h2>
+                <p class="itempassage">
+                    Lorem, ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Corrupti, aliquid
+                </p>
+                <h6 class="price">$7.8</h6>
+            </div>
+        </div>
+
+    </div>
+    <!-- Fourth Row -->
+    <div class="fourthrow">
+        <div class="box7">
+            <div class="text">
+                <h2 class="heading1">Special drink-1</h2>
+                <p class="itempassage">
+                    Lorem, ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Corrupti, aliquid
+                </p>
+                <h6 class="price">$7.8</h6>
+            </div>
+        </div>
+        <div class="box8">
+            <div class="text">
+                <h2 class="heading1">Special drink-1</h2>
+                <p class="itempassage">
+                    Lorem, ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Corrupti, aliquid
+                </p>
+
+                <h6 class="price">$7.8</h6>
+            </div>
+        </div>
+
+    </div>
+    <div class="fifthrow">
+        <div class="box9">
+            <div class="text">
+                <h2 class="heading1">Special drink-1</h2>
+                <p class="itempassage">
+                    Lorem, ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Corrupti, aliquid
+                </p>
+                <h6 class="price">$7.8</h6>
+            </div>
+        </div>
+    </div>
+    <div class="gall">
+        <h2 class="gallery">Gallery</h2>
+        <p class="gtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit Voluptas, dolores.</p>
+    </div>
+    <!-- PHOTOS -->
+    <div class="photo1">
+        <div class="p1"></div>
+        <div class="p2"></div>
+
+        <div class="p3"></div>
+
+    </div>
+    <div class="prow1">
+
+        <div class="p4">
+
+        </div>
+        <div class="p5">
+        </div>
+        <div class="p6"></div>
+    </div>
+    <div class="last1">
+        <div class="midle">
+            <div class="head1">
+                <h2>Customer Reviews</h2>
+
+            </div>
+            <div>
+                <p class="paratext">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="profile">
+                <div class="prof2">
+                    <img src="Profile_1.jpg" alt="" srcset="" height="70pxpx" width="60px" id="img1">
+                </div>
+            </div>
+            <div class="pafter">
+                <h3>Cris Fox</h3>
+            </div>
+            <div class="parafter">
+                <p>CEO at Might Tech</p>
+            </div>
+            <div class="paraf">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ex ad tempora ipsam <br>officiis
+                    voluptate, possimus impedit similique corporis nostrum cupiditate. Et, quam quia! Fugiat <br>iusto
+                    ut praesentium. Vero, aliquam?</p>
+            </div>
+        </div>
+    </div>
+    <div class="infocontact">
+        <div class="conatact">
+            <div class="telephone">
+                <img src="p2.png" alt="">
+            </div>
+            <div class="tfinal">
+                <div class="pphone">Phone</div>
+                <div class="nmunber">+91 7620708127</div>
+            </div>
+        </div>
+        <!-- Conatact 2 -->
+        <div class="conatact2">
+            <div class="email">
+                <img src="E2.png" alt="">
+            </div>
+            <div class="tfinal2">
+                <div class="pphone"> Email </div>
+
+                <div class="nnumber">Yours@gmail.com</div>
+            </div>
+        </div>
+        <!-- CONTACT3 -->
+        <div class="conatact3">
+            <div class="location">
+                <img src="L2.png" alt="">
+            </div>
+            <div class="tfinal2">
+                <div class="pphone">Location </div>
+
+                <div class="nnumber">800, Lorem Street, US
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="mfooter">
+        <div class="footerrow">
+            <div class="box">
+                ABOUT US
+            </div>
+            <div class="lore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil dicta quo corporis
+                provident officia libero excepturi nobis sint sit 
+                inventore temporibus minus!!</div>
+        </div>
+        <div class="footerrow">
+            <div class="box">
+                Opening Hours
+            </div>
+            <div class="lore">
+                Monday : Closed <br>
+
+                Tue-Wed : 09am - 10pm <br>
+
+                Thu-Fri : 09am - 10pm
+                <br>
+
+                Sat-Sun : 09am - 10pm
+            </div>
+        </div>
+        <div class="footerrow">
+            <div class="box">Contact Information</div>
+            <div class="lore">
+                Ipsum Street, Lorem Tower, MO,<br>
+                Columbia, 508000 <br>
+                +01 2000 800 9999<br>
+                info@admin.com
+            </div>
+        </div>
+        <div class="footerrow">
+
+            <div class="box">Subscribe</div>
+            <div class="sub">
+                <div class="email">
+                    <input type="email" placeholder="Email Adress....">
+                </div>
+
+            </div>
+            <div class="sub1">Subscribe</div>
+            <div class="icon">
+                
+                    <div>
+                        <img src="facebook.png" alt="" srcset="">
+                    </div>
+                    <div> <img src="instagram.png" alt="" srcset=""></div>
+                    <div>
+                        <img src="twitter.png" alt="" srcset="">
+                    </div>
+                    <div><img src="linkdin.png" alt="" srcset=""></div>
+                    <div> <img src="g2.png" alt="" srcset=""></div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="finalfooter">
+        All Rights Reserved.© 2022 The Food Place
+    </div>
+
+</body>
+
+</html>
